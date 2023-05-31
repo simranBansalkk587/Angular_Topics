@@ -18,7 +18,7 @@
   </div>
 </nav>
 <router-outlet></router-outlet>
-<app-login></app-login>
+<!-- <app-login [loginTitle]="website.loginTitle"></app-login> -->
 <div>
   <button class="btn btn-center btn btn-primary" (click)="getName(hello)">Click</button>
   <br/>
@@ -27,6 +27,31 @@
   <br/>
   <br/>
 
-  <h2 (mouseover)="myEvent('Mouse event calling')">Mouseover</h2>
-  <p [innerHTML]="ourText"></p>
+  <!-- <h2 (mouseover)="myEvent('Mouse event calling')">Mouseover</h2> -->
+  <!-- <p [textContent]="ourText"></p>
+  <img [src]="website.logo"> -->
+  <!-- I method property binding -->
+  <!-- <br/>
+  <img bind-src="website.logo"> -->
+  <!-- 2nd method propety binding -->
+  <!-- <br/>
+  <img src={{website.logo}}> -->
+  <!-- 3rd method property binding -->
+<!-- <br/>
+<br/>
+<input type="text"[disabled]="isDisabled" value="{{yourname}}"/>
+<br/>
+<br/>
+<input type="text"[disabled]="isDisabled" value="{{yourname}}"/>
+<br/>
+<button (click)="editfun()">Edit</button> -->
+<ul *ngFor="let item of myArray">
+  <li>{{item.name}}-Age:{{item.age}}-Email:{{item.
+    Email}}</li>
+  
+</ul>
+<div>
+  <h1></h1>
+</div>
+
 </div>
